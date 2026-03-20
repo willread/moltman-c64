@@ -1,0 +1,195 @@
+Modules list:
+-------------
+moltball.c.1475810.0.o:
+    CODE              Offs=000000  Size=002FB3  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000133  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000A3F  Align=00001  Fill=0000
+moltball_asm.s.1475810.1.o:
+    CODE              Offs=002FB3  Size=000068  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(_cursor.o):
+    BSS               Offs=000A3F  Size=000001  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(addeqsp.o):
+    CODE              Offs=00301B  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(addysp.o):
+    CODE              Offs=00302C  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(aslax1.o):
+    CODE              Offs=00303A  Size=000008  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(asrax3.o):
+    CODE              Offs=003042  Size=000014  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(axlong.o):
+    CODE              Offs=003056  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(callmain.o):
+    CODE              Offs=003063  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000004  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(cgetc.o):
+    CODE              Offs=00307A  Size=000047  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(condes.o):
+    CODE              Offs=0030C1  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=000004  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(crt0.o):
+    STARTUP           Offs=000000  Size=000033  Align=00001  Fill=0000
+    ONCE              Offs=00000C  Size=00001A  Align=00001  Fill=0000
+    INIT              Offs=000000  Size=00001C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decax1.o):
+    CODE              Offs=0030CD  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decaxy.o):
+    CODE              Offs=0030D4  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp1.o):
+    CODE              Offs=0030DD  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp2.o):
+    CODE              Offs=0030E6  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp3.o):
+    CODE              Offs=0030F3  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp4.o):
+    CODE              Offs=003100  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp5.o):
+    CODE              Offs=00310D  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp6.o):
+    CODE              Offs=00311A  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp7.o):
+    CODE              Offs=003127  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(icmp.o):
+    CODE              Offs=003134  Size=00002E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax1.o):
+    CODE              Offs=003162  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax2.o):
+    CODE              Offs=003169  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax3.o):
+    CODE              Offs=003170  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax5.o):
+    CODE              Offs=003175  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax6.o):
+    CODE              Offs=00317A  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax7.o):
+    CODE              Offs=00317F  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incaxy.o):
+    CODE              Offs=003184  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp1.o):
+    CODE              Offs=00318F  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp2.o):
+    CODE              Offs=003196  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp3.o):
+    CODE              Offs=0031AC  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp4.o):
+    CODE              Offs=0031B1  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp5.o):
+    CODE              Offs=0031B6  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp6.o):
+    CODE              Offs=0031BB  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp7.o):
+    CODE              Offs=0031C0  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp8.o):
+    CODE              Offs=0031C5  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(kbhit.o):
+    CODE              Offs=0031CA  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(kernal.o):
+/tmp/cc65/share/cc65/lib/c64.lib(ladd.o):
+    CODE              Offs=0031D3  Size=000025  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(laddeq.o):
+    CODE              Offs=0031F8  Size=00002D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(lcmp.o):
+    CODE              Offs=003225  Size=00003B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldai.o):
+    CODE              Offs=003260  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldaxi.o):
+    CODE              Offs=00326C  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldaxsp.o):
+    CODE              Offs=003279  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldeaxysp.o):
+    CODE              Offs=003282  Size=000013  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldptr1sp.o):
+    CODE              Offs=003295  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(leaaxsp.o):
+    CODE              Offs=0032A1  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(leq.o):
+    CODE              Offs=0032AD  Size=000006  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(lmul.o):
+    CODE              Offs=0032B3  Size=00005C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(loadaddr.o):
+    LOADADDR          Offs=000000  Size=000002  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(lpush.o):
+    CODE              Offs=00330F  Size=000021  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ltest.o):
+    CODE              Offs=003330  Size=00000F  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ludiv.o):
+    CODE              Offs=00333F  Size=00007A  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(lumod.o):
+    CODE              Offs=0033B9  Size=000019  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(makebool.o):
+    CODE              Offs=0033D2  Size=00002C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(memcpy.o):
+    CODE              Offs=0033FE  Size=00003C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(memset.o):
+    CODE              Offs=00343A  Size=00005D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mod.o):
+    CODE              Offs=003497  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mul8.o):
+    CODE              Offs=0034A8  Size=00003A  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mulax3.o):
+    CODE              Offs=0034E2  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(negabs.o):
+    CODE              Offs=0034F3  Size=000012  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(or.o):
+    CODE              Offs=003505  Size=000012  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(popptr1.o):
+    CODE              Offs=003517  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pusha.o):
+    CODE              Offs=003525  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pushax.o):
+    CODE              Offs=00353B  Size=00001A  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pushwsp.o):
+    CODE              Offs=003555  Size=00001C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(rand.o):
+    CODE              Offs=003571  Size=000034  Align=00001  Fill=0000
+    DATA              Offs=000029  Size=000004  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shelp.o):
+    CODE              Offs=0035A5  Size=000020  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shl.o):
+    CODE              Offs=0035C5  Size=000033  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shrax2.o):
+    CODE              Offs=0035F8  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shrax3.o):
+    CODE              Offs=003603  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staspidx.o):
+    CODE              Offs=003611  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staxsp.o):
+    CODE              Offs=003627  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staxspi.o):
+    CODE              Offs=003632  Size=00001B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(steaxsp.o):
+    CODE              Offs=00364D  Size=000015  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(sub.o):
+    CODE              Offs=003662  Size=000015  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(subeqsp.o):
+    CODE              Offs=003677  Size=000015  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(subysp.o):
+    CODE              Offs=00368C  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(udiv.o):
+    CODE              Offs=003699  Size=00004F  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(umod.o):
+    CODE              Offs=0036E8  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(waitvsync.o):
+    CODE              Offs=0036F9  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(zerobss.o):
+    CODE              Offs=003704  Size=000023  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+ZEROPAGE              000002  00001B  00001A  00001
+LOADADDR              0007FF  000800  000002  00001
+EXEHDR                000801  00080C  00000C  00001
+STARTUP               00080D  00083F  000033  00001
+CODE                  000840  003F66  003727  00001
+RODATA                003F67  004099  000133  00001
+DATA                  00409A  0040C6  00002D  00001
+INIT                  0040C7  0040E2  00001C  00001
+ONCE                  0040E3  004108  000026  00001
+BSS                   005000  005A3F  000A40  00001

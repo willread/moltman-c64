@@ -1,0 +1,747 @@
+Modules list:
+-------------
+moltball.c.1474595.0.o:
+    CODE              Offs=000000  Size=002C8C  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000122  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=000604  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(_cursor.o):
+    BSS               Offs=000604  Size=000001  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(addeqsp.o):
+    CODE              Offs=002C8C  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(addysp.o):
+    CODE              Offs=002C9D  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(aslax1.o):
+    CODE              Offs=002CAB  Size=000008  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(asrax3.o):
+    CODE              Offs=002CB3  Size=000014  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(callmain.o):
+    CODE              Offs=002CC7  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000004  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(cgetc.o):
+    CODE              Offs=002CDE  Size=000047  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(condes.o):
+    CODE              Offs=002D25  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=000004  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(crt0.o):
+    STARTUP           Offs=000000  Size=000033  Align=00001  Fill=0000
+    ONCE              Offs=00000C  Size=00001A  Align=00001  Fill=0000
+    INIT              Offs=000000  Size=00001C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decax1.o):
+    CODE              Offs=002D31  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decaxy.o):
+    CODE              Offs=002D38  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp1.o):
+    CODE              Offs=002D41  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp2.o):
+    CODE              Offs=002D4A  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp3.o):
+    CODE              Offs=002D57  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp4.o):
+    CODE              Offs=002D64  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp5.o):
+    CODE              Offs=002D71  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp6.o):
+    CODE              Offs=002D7E  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(decsp7.o):
+    CODE              Offs=002D8B  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(icmp.o):
+    CODE              Offs=002D98  Size=00002E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax1.o):
+    CODE              Offs=002DC6  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax2.o):
+    CODE              Offs=002DCD  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax3.o):
+    CODE              Offs=002DD4  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax5.o):
+    CODE              Offs=002DD9  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax6.o):
+    CODE              Offs=002DDE  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incax7.o):
+    CODE              Offs=002DE3  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incaxy.o):
+    CODE              Offs=002DE8  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp1.o):
+    CODE              Offs=002DF3  Size=000007  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp2.o):
+    CODE              Offs=002DFA  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp3.o):
+    CODE              Offs=002E10  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp4.o):
+    CODE              Offs=002E15  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp5.o):
+    CODE              Offs=002E1A  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp6.o):
+    CODE              Offs=002E1F  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp7.o):
+    CODE              Offs=002E24  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(incsp8.o):
+    CODE              Offs=002E29  Size=000005  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(kbhit.o):
+    CODE              Offs=002E2E  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(kernal.o):
+/tmp/cc65/share/cc65/lib/c64.lib(ldai.o):
+    CODE              Offs=002E37  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldaxi.o):
+    CODE              Offs=002E43  Size=00000D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldaxsp.o):
+    CODE              Offs=002E50  Size=000009  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(ldptr1sp.o):
+    CODE              Offs=002E59  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(leaaxsp.o):
+    CODE              Offs=002E65  Size=00000C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(loadaddr.o):
+    LOADADDR          Offs=000000  Size=000002  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(makebool.o):
+    CODE              Offs=002E71  Size=00002C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(memcpy.o):
+    CODE              Offs=002E9D  Size=00003C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(memset.o):
+    CODE              Offs=002ED9  Size=00005D  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mod.o):
+    CODE              Offs=002F36  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mul8.o):
+    CODE              Offs=002F47  Size=00003A  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(mulax3.o):
+    CODE              Offs=002F81  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(negabs.o):
+    CODE              Offs=002F92  Size=000012  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(or.o):
+    CODE              Offs=002FA4  Size=000012  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(popptr1.o):
+    CODE              Offs=002FB6  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pusha.o):
+    CODE              Offs=002FC4  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pushax.o):
+    CODE              Offs=002FDA  Size=00001A  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(pushwsp.o):
+    CODE              Offs=002FF4  Size=00001C  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(rand.o):
+    CODE              Offs=003010  Size=000034  Align=00001  Fill=0000
+    DATA              Offs=000029  Size=000004  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shelp.o):
+    CODE              Offs=003044  Size=000020  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shl.o):
+    CODE              Offs=003064  Size=000033  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shrax2.o):
+    CODE              Offs=003097  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(shrax3.o):
+    CODE              Offs=0030A2  Size=00000E  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staspidx.o):
+    CODE              Offs=0030B0  Size=000016  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staxsp.o):
+    CODE              Offs=0030C6  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(staxspi.o):
+    CODE              Offs=0030D1  Size=00001B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(sub.o):
+    CODE              Offs=0030EC  Size=000015  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(subeqsp.o):
+    CODE              Offs=003101  Size=000015  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(udiv.o):
+    CODE              Offs=003116  Size=00004F  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(umod.o):
+    CODE              Offs=003165  Size=000011  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(waitvsync.o):
+    CODE              Offs=003176  Size=00000B  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(zerobss.o):
+    CODE              Offs=003181  Size=000023  Align=00001  Fill=0000
+/tmp/cc65/share/cc65/lib/c64.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+ZEROPAGE              000002  00001B  00001A  00001
+LOADADDR              0007FF  000800  000002  00001
+EXEHDR                000801  00080C  00000C  00001
+STARTUP               00080D  00083F  000033  00001
+CODE                  000840  0039E3  0031A4  00001
+RODATA                0039E4  003B05  000122  00001
+DATA                  003B06  003B32  00002D  00001
+INIT                  003B33  003B4E  00001C  00001
+BSS                   003B4F  004153  000605  00001
+ONCE                  003B4F  003B74  000026  00001
+
+
+Exports list by name:
+---------------------
+BSOUT                     00FFD2 RLA    __BSS_RUN__               003B4F RLA    
+__BSS_SIZE__              000605 REA    __CONSTRUCTOR_COUNT__     000000 REA    
+__CONSTRUCTOR_TABLE__     003B75 RLA    __DESTRUCTOR_COUNT__      000000 REA    
+__DESTRUCTOR_TABLE__      003B06 RLA    __EXEHDR__                000001 REA    
+__HEADER_LAST__           00080D RLA    __HIMEM__                 00D000 REA    
+__LOADADDR__              000001 REA    __MAIN_SIZE__             00C7F3 REA    
+__MAIN_START__            00080D RLA    __ONCE_RUN__              003B4F RLA    
+__STACKSIZE__             000800 REA    __STARTUP__               000001 REA    
+_cgetc                    00351E RLA    _kbhit                    00366E RLA    
+_main                     003364 RLA    _memcpy                   0036DD RLA    
+_memset                   003721 RLA    _rand                     00385C RLA    
+_waitvsync                0039B6 RLA    addeq0sp                  0034CC RLA    
+addeqysp                  0034CE RLA    addysp                    0034DE RLA    
+addysp1                   0034DD RLA    aslax1                    0034EB RLA    
+aslaxy                    0038AB RLA    asrax3                    0034F3 RLA    
+boolne                    0036B1 RLA    c_sp                      000002 RLZ    
+callmain                  003507 RLA    cursor                    004153 RLA    
+decax1                    003571 RLA    decaxy                    003578 RLA    
+decsp1                    003581 RLA    decsp2                    00358A RLA    
+decsp3                    003597 RLA    decsp4                    0035A4 RLA    
+decsp5                    0035B1 RLA    decsp6                    0035BE RLA    
+decsp7                    0035CB RLA    donelib                   003565 RLA    
+incax1                    003606 RLA    incax2                    00360D RLA    
+incax3                    003614 RLA    incax4                    003628 RLA    
+incax5                    003619 RLA    incax6                    00361E RLA    
+incax7                    003623 RLA    incaxy                    00362A RLA    
+incsp1                    003633 RLA    incsp2                    003642 RLA    
+incsp3                    003650 RLA    incsp4                    003655 RLA    
+incsp5                    00365A RLA    incsp6                    00365F RLA    
+incsp7                    003664 RLA    incsp8                    003669 RLA    
+initlib                   003B4F RLA    ldaidx                    003677 RLA    
+ldax0sp                   003690 RLA    ldaxi                     003683 RLA    
+ldaxysp                   003692 RLA    ldptr10sp                 003699 RLA    
+ldptr1ysp                 00369B RLA    leaa0sp                   0036A5 RLA    
+leaaxsp                   0036A7 RLA    mulax3                    0037C1 RLA    
+negax                     0037D6 RLA    popax                     00363A RLA    
+popptr1                   0037F6 RLA    popsargsudiv16            003884 RLA    
+ptr1                      00000A RLZ    ptr2                      00000C RLZ    
+ptr3                      00000E RLZ    ptr4                      000010 RLZ    
+push0                     00381A RLA    pusha                     003808 RLA    
+pusha0                    00381C RLA    pushax                    00381E RLA    
+pushwysp                  003836 RLA    regbank                   000016 RLZ    
+shrax2                    0038D7 RLA    shrax3                    0038E2 RLA    
+sreg                      000004 RLZ    staspidx                  0038F0 RLA    
+stax0sp                   003906 RLA    staxspidx                 003911 RLA    
+staxysp                   003908 RLA    subeq0sp                  003941 RLA    
+subeqysp                  003943 RLA    tmp1                      000012 RLZ    
+tmp2                      000013 RLZ    tosicmp                   0035DA RLA    
+tosmoda0                  003776 RLA    tosora0                   0037E4 RLA    
+tossuba0                  00392C RLA    tosudiva0                 003956 RLA    
+tosudivax                 003958 RLA    tosumoda0                 0039A5 RLA    
+tosumula0                 003787 RLA    udiv16                    003967 RLA    
+zerobss                   0039C1 RLA    
+
+
+Exports list by value:
+----------------------
+__CONSTRUCTOR_COUNT__     000000 REA    __DESTRUCTOR_COUNT__      000000 REA    
+__EXEHDR__                000001 REA    __LOADADDR__              000001 REA    
+__STARTUP__               000001 REA    c_sp                      000002 RLZ    
+sreg                      000004 RLZ    ptr1                      00000A RLZ    
+ptr2                      00000C RLZ    ptr3                      00000E RLZ    
+ptr4                      000010 RLZ    tmp1                      000012 RLZ    
+tmp2                      000013 RLZ    regbank                   000016 RLZ    
+__BSS_SIZE__              000605 REA    __STACKSIZE__             000800 REA    
+__HEADER_LAST__           00080D RLA    __MAIN_START__            00080D RLA    
+_main                     003364 RLA    addeq0sp                  0034CC RLA    
+addeqysp                  0034CE RLA    addysp1                   0034DD RLA    
+addysp                    0034DE RLA    aslax1                    0034EB RLA    
+asrax3                    0034F3 RLA    callmain                  003507 RLA    
+_cgetc                    00351E RLA    donelib                   003565 RLA    
+decax1                    003571 RLA    decaxy                    003578 RLA    
+decsp1                    003581 RLA    decsp2                    00358A RLA    
+decsp3                    003597 RLA    decsp4                    0035A4 RLA    
+decsp5                    0035B1 RLA    decsp6                    0035BE RLA    
+decsp7                    0035CB RLA    tosicmp                   0035DA RLA    
+incax1                    003606 RLA    incax2                    00360D RLA    
+incax3                    003614 RLA    incax5                    003619 RLA    
+incax6                    00361E RLA    incax7                    003623 RLA    
+incax4                    003628 RLA    incaxy                    00362A RLA    
+incsp1                    003633 RLA    popax                     00363A RLA    
+incsp2                    003642 RLA    incsp3                    003650 RLA    
+incsp4                    003655 RLA    incsp5                    00365A RLA    
+incsp6                    00365F RLA    incsp7                    003664 RLA    
+incsp8                    003669 RLA    _kbhit                    00366E RLA    
+ldaidx                    003677 RLA    ldaxi                     003683 RLA    
+ldax0sp                   003690 RLA    ldaxysp                   003692 RLA    
+ldptr10sp                 003699 RLA    ldptr1ysp                 00369B RLA    
+leaa0sp                   0036A5 RLA    leaaxsp                   0036A7 RLA    
+boolne                    0036B1 RLA    _memcpy                   0036DD RLA    
+_memset                   003721 RLA    tosmoda0                  003776 RLA    
+tosumula0                 003787 RLA    mulax3                    0037C1 RLA    
+negax                     0037D6 RLA    tosora0                   0037E4 RLA    
+popptr1                   0037F6 RLA    pusha                     003808 RLA    
+push0                     00381A RLA    pusha0                    00381C RLA    
+pushax                    00381E RLA    pushwysp                  003836 RLA    
+_rand                     00385C RLA    popsargsudiv16            003884 RLA    
+aslaxy                    0038AB RLA    shrax2                    0038D7 RLA    
+shrax3                    0038E2 RLA    staspidx                  0038F0 RLA    
+stax0sp                   003906 RLA    staxysp                   003908 RLA    
+staxspidx                 003911 RLA    tossuba0                  00392C RLA    
+subeq0sp                  003941 RLA    subeqysp                  003943 RLA    
+tosudiva0                 003956 RLA    tosudivax                 003958 RLA    
+udiv16                    003967 RLA    tosumoda0                 0039A5 RLA    
+_waitvsync                0039B6 RLA    zerobss                   0039C1 RLA    
+__DESTRUCTOR_TABLE__      003B06 RLA    __BSS_RUN__               003B4F RLA    
+__ONCE_RUN__              003B4F RLA    initlib                   003B4F RLA    
+__CONSTRUCTOR_TABLE__     003B75 RLA    cursor                    004153 RLA    
+__MAIN_SIZE__             00C7F3 REA    __HIMEM__                 00D000 REA    
+BSOUT                     00FFD2 RLA    
+
+
+Imports list:
+-------------
+BSOUT (kernal.o):
+    crt0.o                    c64/crt0.s:10
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s:8
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:18
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s:19
+__EXEHDR__ (exehdr.o):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:6
+__HEADER_LAST__ ([linker generated]):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:14
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:14
+__HIMEM__ ([linker generated]):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:15
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:14
+__LOADADDR__ (loadaddr.o):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:5
+__MAIN_SIZE__ ([linker generated]):
+    crt0.o                    c64/crt0.s:11
+__MAIN_START__ ([linker generated]):
+    crt0.o                    c64/crt0.s:11
+__ONCE_RUN__ ([linker generated]):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:15
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:15
+__STACKSIZE__ ([linker generated]):
+    [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:15
+__STARTUP__ (crt0.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:13
+_cgetc (cgetc.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:16
+_kbhit (kbhit.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:15
+_main (moltball.c.1474595.0.o):
+    callmain.o                runtime/callmain.s:11
+_memcpy (memcpy.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:17
+_memset (memset.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:18
+_rand (rand.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:19
+_waitvsync (waitvsync.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:14
+addeq0sp (addeqsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+addeqysp (addeqsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+addysp (addysp.o):
+    incsp8.o                  runtime/incsp8.s:8
+    incsp7.o                  runtime/incsp7.s:8
+    incsp6.o                  runtime/incsp6.s:8
+    incsp5.o                  runtime/incsp5.s:8
+    incsp4.o                  runtime/incsp4.s:8
+    incsp3.o                  runtime/incsp3.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+addysp1 (addysp.o):
+    sub.o                     runtime/sub.s:8
+    or.o                      runtime/or.s:9
+aslax1 (aslax1.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+aslaxy (shl.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+asrax3 (asrax3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+boolne (makebool.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+c_sp (zeropage.o):
+    subeqsp.o                 runtime/subeqsp.s:8
+    sub.o                     runtime/sub.s:9
+    staxspi.o                 runtime/staxspi.s:10
+    staxsp.o                  runtime/staxsp.s:8
+    staspidx.o                runtime/staspidx.s:9
+    pushwsp.o                 runtime/pushwsp.s:8
+    pushax.o                  runtime/pushax.s:8
+    pusha.o                   runtime/pusha.s:8
+    popptr1.o                 runtime/popptr1.s:9
+    or.o                      runtime/or.s:10
+    memset.o                  common/memset.s:20
+    memcpy.o                  common/memcpy.s:15
+    leaaxsp.o                 runtime/leaaxsp.s:8
+    ldptr1sp.o                runtime/ldptr1sp.s:8
+    ldaxsp.o                  runtime/ldaxsp.s:8
+    incsp2.o                  runtime/incsp2.s:8
+    incsp1.o                  runtime/incsp1.s:8
+    icmp.o                    runtime/icmp.s:9
+    decsp7.o                  runtime/decsp7.s:8
+    decsp6.o                  runtime/decsp6.s:8
+    decsp5.o                  runtime/decsp5.s:8
+    decsp4.o                  runtime/decsp4.s:8
+    decsp3.o                  runtime/decsp3.s:8
+    decsp2.o                  runtime/decsp2.s:8
+    decsp1.o                  runtime/decsp1.s:8
+    crt0.o                    /tmp/cc65-src/asminc/zeropage.inc:11
+    addysp.o                  runtime/addysp.s:8
+    addeqsp.o                 runtime/addeqsp.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:10
+callmain (callmain.o):
+    crt0.o                    c64/crt0.s:9
+cursor (_cursor.o):
+    cgetc.o                   c64/cgetc.s:8
+decax1 (decax1.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decaxy (decaxy.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp1 (decsp1.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp2 (decsp2.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp3 (decsp3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp4 (decsp4.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp5 (decsp5.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp6 (decsp6.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+decsp7 (decsp7.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+donelib (condes.o):
+    crt0.o                    c64/crt0.s:8
+incax1 (incax1.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax2 (incax2.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax3 (incax3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax4 (incaxy.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax5 (incax5.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax6 (incax6.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incax7 (incax7.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incaxy (incaxy.o):
+    incax7.o                  runtime/incax7.s:8
+    incax6.o                  runtime/incax6.s:8
+    incax5.o                  runtime/incax5.s:8
+    incax3.o                  runtime/incax3.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp1 (incsp1.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp2 (incsp2.o):
+    staxspi.o                 runtime/staxspi.s:9
+    staspidx.o                runtime/staspidx.s:8
+    popptr1.o                 runtime/popptr1.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp3 (incsp3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp4 (incsp4.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp5 (incsp5.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp6 (incsp6.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp7 (incsp7.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+incsp8 (incsp8.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+initlib (condes.o):
+    crt0.o                    c64/crt0.s:8
+ldaidx (ldai.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+ldax0sp (ldaxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+ldaxi (ldaxi.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+ldaxysp (ldaxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+ldptr10sp (ldptr1sp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+ldptr1ysp (ldptr1sp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+leaa0sp (leaaxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+leaaxsp (leaaxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+mulax3 (mulax3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+negax (negabs.o):
+    shelp.o                   runtime/shelp.s:11
+    mod.o                     runtime/mod.s:11
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+popax (incsp2.o):
+    shl.o                     runtime/shl.s:15
+    shelp.o                   runtime/shelp.s:11
+    memset.o                  common/memset.s:19
+    memcpy.o                  common/memcpy.s:14
+popptr1 (popptr1.o):
+    umod.o                    runtime/umod.s:8
+    udiv.o                    runtime/udiv.s:9
+    mul8.o                    runtime/mul8.s:9
+    memcpy.o                  common/memcpy.s:14
+popsargsudiv16 (shelp.o):
+    mod.o                     runtime/mod.s:11
+ptr1 (zeropage.o):
+    zerobss.o                 common/zerobss.s:9
+    udiv.o                    runtime/udiv.s:10
+    staxspi.o                 runtime/staxspi.s:10
+    staspidx.o                runtime/staspidx.s:9
+    shelp.o                   runtime/shelp.s:12
+    popptr1.o                 runtime/popptr1.s:9
+    mulax3.o                  runtime/mulax3.s:9
+    mul8.o                    runtime/mul8.s:10
+    memset.o                  common/memset.s:20
+    memcpy.o                  common/memcpy.s:15
+    ldptr1sp.o                runtime/ldptr1sp.s:8
+    ldaxi.o                   runtime/ldaxi.s:8
+    ldai.o                    runtime/ldai.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:11
+ptr2 (zeropage.o):
+    memset.o                  common/memset.s:20
+    memcpy.o                  common/memcpy.s:15
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:11
+ptr3 (zeropage.o):
+    memset.o                  common/memset.s:20
+    memcpy.o                  common/memcpy.s:15
+ptr4 (zeropage.o):
+    umod.o                    runtime/umod.s:9
+    udiv.o                    runtime/udiv.s:10
+    shelp.o                   runtime/shelp.s:12
+    mul8.o                    runtime/mul8.s:10
+push0 (pushax.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+pusha (pusha.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+pusha0 (pushax.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+pushax (pushax.o):
+    callmain.o                runtime/callmain.s:11
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+pushwysp (pushwsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+regbank (zeropage.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:10
+shrax2 (shrax2.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+shrax3 (shrax3.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+sreg (zeropage.o):
+    umod.o                    runtime/umod.s:9
+    udiv.o                    runtime/udiv.s:10
+    mod.o                     runtime/mod.s:12
+    icmp.o                    runtime/icmp.s:9
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:10
+staspidx (staspidx.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+stax0sp (staxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+staxspidx (staxspi.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+staxysp (staxsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+subeq0sp (subeqsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+subeqysp (subeqsp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tmp1 (zeropage.o):
+    staxspi.o                 runtime/staxspi.s:10
+    staspidx.o                runtime/staspidx.s:9
+    shrax3.o                  runtime/shrax3.s:8
+    shrax2.o                  runtime/shrax2.s:8
+    shl.o                     runtime/shl.s:16
+    shelp.o                   runtime/shelp.s:12
+    or.o                      runtime/or.s:10
+    mod.o                     runtime/mod.s:12
+    incaxy.o                  runtime/incaxy.s:8
+    decaxy.o                  runtime/decaxy.s:8
+    asrax3.o                  runtime/asrax3.s:9
+    aslax1.o                  runtime/aslax1.s:8
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:11
+tmp2 (zeropage.o):
+    shelp.o                   runtime/shelp.s:12
+tosicmp (icmp.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosmoda0 (mod.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosora0 (or.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tossuba0 (sub.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosudiva0 (udiv.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosudivax (udiv.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosumoda0 (umod.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+tosumula0 (mul8.o):
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+    moltball.c.1474595.0.o    moltball.c.1474595.0.s:5988
+udiv16 (udiv.o):
+    umod.o                    runtime/umod.s:8
+    shelp.o                   runtime/shelp.s:11
+zerobss (zerobss.o):
+    crt0.o                    c64/crt0.s:9
+
