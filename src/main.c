@@ -1,10 +1,11 @@
-// clean.c - Clean, working C64 Tetris
+// real_tetris.c - Actually working C64 Tetris
 
 #include <c64.h>
 #include <conio.h>
 #include <peekpoke.h>
 #include <stdlib.h>
 
+// Game constants
 #define WIDTH 10
 #define HEIGHT 22
 #define VISIBLE 20
@@ -20,11 +21,13 @@ unsigned long score;
 unsigned int lines;
 unsigned char level;
 unsigned char over;
+unsigned char drop_timer;
+unsigned char frame;
 
-// Colors for pieces
+// Colors
 unsigned char colors[7] = {3,6,8,7,5,4,2};
 
-// Shapes [piece][rot][y][x]
+// Shapes
 unsigned char shapes[7][4][4][4] = {
     {{{0,0,0,0},{1,1,1,1},{0,0,0,0},{0,0,0,0}},
      {{0,0,1,0},{0,0,1,0},{0,0,1,0},{0,0,1,0}},
@@ -56,7 +59,7 @@ unsigned char shapes[7][4][4][4] = {
      {{0,1,0,0},{1,1,0,0},{1,0,0,0},{0,0,0,0}}}
 };
 
-// Check if piece fits
+// Check collision
 unsigned char check(signed char x, signed char y, unsigned char r) {
     unsigned char i, j;
     for (i = 0; i < 4; ++i) {
@@ -65,7 +68,7 @@ unsigned char check(signed char x, signed char y, unsigned char r) {
                 signed char bx = x + j;
                 signed char by = y + i;
                 if (bx < 0 || bx >= WIDTH || by >= HEIGHT) return 1;
-                if (by >= 0 && board[by * WIDTH + bx]) return 1;
+                if (by >= 0 && board[by * WIDTH + bx] != 0) return 1;
             }
         }
     }
@@ -82,7 +85,7 @@ void spawn() {
     if (check(px, py, rot)) over = 1;
 }
 
-// Start new game
+// Start game
 void init() {
     unsigned int i;
     for (i = 0; i < 220; ++i) board[i] = 0;
@@ -90,6 +93,8 @@ void init() {
     lines = 0;
     level = 1;
     over = 0;
+    drop_timer = 0;
+    frame = 0;
     next = rand() % 7;
     spawn();
 }
@@ -151,7 +156,7 @@ void clear() {
 // Controls
 void left() { if (!check(px - 1, py, rot)) px--; }
 void right() { if (!check(px + 1, py, rot)) px++; }
-void rotate_piece() {
+void rotate_p() { 
     unsigned char new_rot = (rot + 1) & 3;
     if (!check(px, py, new_rot)) rot = new_rot;
 }
@@ -159,9 +164,15 @@ void soft() {
     if (!check(px, py + 1, rot)) {
         py++;
         score++;
+        drop_timer = 0;
     } else {
-        lock();
-        clear();
+        if (drop_timer > 30) {
+            lock();
+            clear();
+            drop_timer = 0;
+        } else {
+            drop_timer++;
+        }
     }
 }
 void hard() {
@@ -171,6 +182,22 @@ void hard() {
     }
     lock();
     clear();
+}
+
+// Update game
+void update() {
+    unsigned char speed;
+    
+    if (over) return;
+    
+    frame++;
+    speed = 48 - (level * 5);
+    if (speed < 3) speed = 3;
+    
+    if (frame >= speed) {
+        soft();
+        frame = 0;
+    }
 }
 
 // Drawing
@@ -240,17 +267,15 @@ void draw_score() {
     cputsxy(18, 8, buf);
 }
 
-// Input
+// Input (C64 joystick is ACTIVE LOW: 0 = pressed)
 unsigned char joy() {
-    unsigned char j = PEEK(0xDC00);
-    return ~j & 0x1F;
+    return PEEK(0xDC00);
 }
 
 // Main
 int main() {
     unsigned char j, last = 0;
-    unsigned char frame;
-    unsigned char drop = 0;
+    unsigned char repeat = 0;
     
     // Setup
     clrscr();
@@ -275,36 +300,69 @@ int main() {
     // Start
     init();
     
-    // Loop
+    // Main loop
     while (1) {
+        // Read joystick (ACTIVE LOW: 0 = pressed)
         j = joy();
         
-        if ((j & 2) && !(last & 2)) left();
-        if ((j & 1) && !(last & 1)) right();
-        if ((j & 8) && !(last & 8)) rotate_piece();
-        if ((j & 16) && !(last & 16)) hard();
-        if (j & 4) soft();
+        // Handle input with edge detection
+        if ((j & 0x04) && !(last & 0x04)) {  // LEFT (bit 2)
+            left();
+            repeat = 10;
+        }
+        if ((j & 0x08) && !(last & 0x08)) {  // RIGHT (bit 3)
+            right();
+            repeat = 10;
+        }
+        if ((j & 0x01) && !(last & 0x01)) {  // UP (bit 0)
+            rotate_p();
+        }
+        if ((j & 0x10) && !(last & 0x10)) {  // FIRE (bit 4)
+            hard();
+        }
+        
+        // Repeat for left/right
+        if (!(j & 0x0C)) {  // LEFT or RIGHT held
+            if (repeat > 0) {
+                repeat--;
+            } else {
+                if (!(j & 0x04)) {  // LEFT
+                    left();
+                    repeat = 3;
+                } else if (!(j & 0x08)) {  // RIGHT
+                    right();
+                    repeat = 3;
+                }
+            }
+        } else {
+            repeat = 0;
+        }
+        
+        // Soft drop (continuous)
+        if (!(j & 0x02)) {  // DOWN (bit 1)
+            soft();
+        }
         
         last = j;
         
-        drop++;
-        if (drop >= 48 - (level * 5)) {
-            soft();
-            drop = 0;
-        }
+        // Update game (auto-drop)
+        update();
         
+        // Draw
         draw_board();
         draw_piece();
         draw_next();
         draw_score();
         
+        // Game over
         if (over) {
             cputsxy(8, 12, "GAME OVER");
             cputsxy(6, 14, "FIRE TO RESTART");
-            while (!(joy() & 16)) {}
+            while (!(joy() & 0x10)) {}  // Wait for FIRE
             init();
         }
         
-        for (frame = 0; frame < 100; ++frame) asm("nop");
+        // Simple delay
+        for (j = 0; j < 50; ++j) asm("nop");
     }
 }
