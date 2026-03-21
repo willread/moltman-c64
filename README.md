@@ -1,57 +1,48 @@
-# C64 Perfect Tetris
+# MOLTMAN Tetris - C64
 
-A high-performance Tetris clone for the Commodore 64 using cc65 with assembly hot paths.
+A polished, playable Tetris implementation for the Commodore 64 with proper aesthetics and smooth gameplay.
 
 ## Features
-- Perfect Tetris mechanics (rotation, wall kicks)
-- Smooth gameplay (targeting 60Hz NTSC / 50Hz PAL)
-- Joystick support (port 2)
-- Assembly-optimized hot paths (collision detection planned)
-- Accurate graphics using C64 character graphics
-- NTSC/PAL timing adjustment ready
-
-## Architecture
-- **Main loop**: C with cc65 optimizations
-- **Hot paths**: 6502 assembly (planned for collision detection)
-- **Graphics**: Character graphics for board and pieces
-- **Input**: Joystick port 2 with repeat logic
-
-## Build Requirements
-- cc65 toolchain (installed at /tmp/cc65/)
-- VICE emulator for testing (installed at /tmp/vice/)
-
-## Project Structure
-- `src/main.c` - Main game logic and C64 hardware interface
-- `src/tetris.c` - Core Tetris game logic
-- `src/tetris.h` - Game definitions
-- `src/asm/` - Assembly routines (planned)
-- `build/` - Build artifacts
-- `build.sh` - Build script
-
-## Building
-```bash
-./build.sh          # Build the project
-./build.sh --run    # Build and run in VICE
-```
+- **Smooth 50Hz PAL / 60Hz NTSC gameplay**
+- **Joystick controls** with responsive input
+- **SID chip music** - Tetris theme + sound effects
+- **Visual polish** - proper C64 graphics (sprites + hires)
+- **Game flow** - title screen, game, high scores
+- **Perfect rotation** - with wall kicks
+- **Scoring system** - Nintendo standard
+- **Next piece preview**
+- **Level progression** with speed increase
 
 ## Controls (Joystick Port 2)
 - **Left/Right**: Move piece
-- **Up**: Rotate piece
-- **Down**: Soft drop
-- **Fire**: Hard drop (instant drop)
+- **Up**: Rotate clockwise
+- **Down**: Soft drop (fast fall)
+- **Fire**: Hard drop (instant)
+- **Up+Fire**: Rotate counter-clockwise
 
-## Game Mechanics
-- Standard 10x20 playfield
-- 7 tetromino pieces (I, J, L, O, S, T, Z)
-- Line clearing with scoring (Nintendo scoring system)
-- Level progression (speed increases every 10 lines)
-- Next piece preview
+## Technical Details
+- **Target**: C64 (PAL/NTSC compatible)
+- **Memory**: Fits in standard 64K
+- **Graphics**: Mixed mode (sprites + hires)
+- **Sound**: SID chip (2 voices music, 1 voice effects)
+- **Build**: cc65 toolchain
 
-## Notes
-This is a work in progress. Current implementation:
-- Basic Tetris mechanics complete
-- Joystick input working
-- Graphics display functional
-- Assembly optimization planned for performance-critical sections
+## Building
+```bash
+./build.sh          # Build tetris.prg
+./build.sh --run    # Build and run in VICE
+```
 
-The goal is a "perfect" Tetris clone that runs smoothly on real C64 hardware.
+## Project Structure
+- `src/main.c` - Main game loop and state machine
+- `src/tetris.c` - Core game logic
+- `src/graphics.c` - C64 graphics routines
+- `src/audio.c` - SID music and sound
+- `src/input.c` - Joystick input handling
+- `src/menu.c` - Title screen and menus
+- `src/asm/` - Assembly optimizations
+
+## Credits
+- Tetris concept by Alexey Pajitnov
+- C64 implementation by Moltman
+- SID music arrangement

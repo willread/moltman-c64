@@ -6,13 +6,13 @@ set -e
 CC65_PREFIX="/tmp/cc65/bin"
 VICE="/tmp/vice/usr/bin/x64sc"
 
-echo "Building C64 Tetris..."
+echo "Building MOLTMAN Tetris for C64..."
 
 # Create build directory
 mkdir -p build
 
-# Compile C sources
-echo "Compiling C sources..."
+# Compile with optimizations
+echo "Compiling sources..."
 $CC65_PREFIX/cl65 -O -t c64 \
     -I src \
     src/main.c \
@@ -21,19 +21,22 @@ $CC65_PREFIX/cl65 -O -t c64 \
     -m build/tetris.map \
     -Ln build/tetris.dbg
 
-# Check if build succeeded
+# Check build
 if [ $? -eq 0 ]; then
+    PRG_SIZE=$(wc -c < build/tetris.prg)
     echo "Build successful!"
     echo "Output: build/tetris.prg"
-    echo "Size: $(wc -c < build/tetris.prg) bytes"
+    echo "Size: $PRG_SIZE bytes"
     
-    # Check if under C64 memory limits
-    PRG_SIZE=$(wc -c < build/tetris.prg)
-    if [ $PRG_SIZE -gt 49152 ]; then
-        echo "WARNING: Program size ($PRG_SIZE bytes) exceeds typical C64 limits!"
+    if [ $PRG_SIZE -gt 30000 ]; then
+        echo "WARNING: Large size ($PRG_SIZE bytes)"
     fi
     
-    # Optional: Run in emulator
+    # Disassemble for inspection
+    echo "Disassembling..."
+    $CC65_PREFIX/da65 build/tetris.prg > build/disasm.txt 2>/dev/null
+    
+    # Run in emulator if requested
     if [ "$1" = "--run" ] && [ -f "$VICE" ]; then
         echo "Starting VICE emulator..."
         $VICE build/tetris.prg &
