@@ -7,10 +7,9 @@
 
 // ==================== MAZE DATA ====================
 
-// Simplified Pac-Man maze (14x15, half size for simplicity)
-// Each tile is 2x2 original tiles
-#define SIMPLE_WIDTH 14
-#define SIMPLE_HEIGHT 15
+// Larger maze (20x20) to fill screen
+#define SIMPLE_WIDTH 20
+#define SIMPLE_HEIGHT 20
 
 // Tile characters for display
 #define WALL_CHAR   0x40      // Checkerboard character

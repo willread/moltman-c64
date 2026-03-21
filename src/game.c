@@ -28,21 +28,21 @@ void game_init(GameStateData* game) {
     maze_init(game);
     
     // Initialize Mr. Molty
-    game->molty.maze_pos.x = 7;  // Center of simplified maze
-    game->molty.maze_pos.y = 10; // Starting position
+    game->molty.maze_pos.x = 10;  // Center of 20x20 maze
+    game->molty.maze_pos.y = 2;   // Starting position (path tile)
     game->molty.pixel_pos.x = game->molty.maze_pos.x * TILE_SIZE;
     game->molty.pixel_pos.y = game->molty.maze_pos.y * TILE_SIZE;
     game->molty.dir = DIR_RIGHT;
     game->molty.next_dir = DIR_NONE;
-    game->molty.speed = 1;
+    game->molty.speed = 2;
     game->molty.anim_frame = 0;
     game->molty.sprite_index = 0;
     game->molty.color = MOLTY_COLOR;
     
     // Initialize coolers (ghosts)
     for (i = 0; i < 4; ++i) {
-        game->coolers[i].base.maze_pos.x = 6 + i;
-        game->coolers[i].base.maze_pos.y = 7;
+        game->coolers[i].base.maze_pos.x = 8 + (i * 2);  // Spread out: 8,10,12,14
+        game->coolers[i].base.maze_pos.y = 1;            // Top row paths
         game->coolers[i].base.pixel_pos.x = game->coolers[i].base.maze_pos.x * TILE_SIZE;
         game->coolers[i].base.pixel_pos.y = game->coolers[i].base.maze_pos.y * TILE_SIZE;
         game->coolers[i].base.dir = DIR_LEFT;
@@ -71,8 +71,8 @@ void game_init(GameStateData* game) {
 
 void game_reset_level(GameStateData* game) {
     // Reset positions
-    game->molty.maze_pos.x = 7;
-    game->molty.maze_pos.y = 10;
+    game->molty.maze_pos.x = 10;
+    game->molty.maze_pos.y = 2;
     game->molty.pixel_pos.x = game->molty.maze_pos.x * TILE_SIZE;
     game->molty.pixel_pos.y = game->molty.maze_pos.y * TILE_SIZE;
     game->molty.dir = DIR_RIGHT;
@@ -82,8 +82,8 @@ void game_reset_level(GameStateData* game) {
     {
         uint8_t i;
         for (i = 0; i < 4; ++i) {
-            game->coolers[i].base.maze_pos.x = 6 + i;
-            game->coolers[i].base.maze_pos.y = 7;
+            game->coolers[i].base.maze_pos.x = 8 + (i * 2);
+            game->coolers[i].base.maze_pos.y = 1;
             game->coolers[i].base.pixel_pos.x = game->coolers[i].base.maze_pos.x * TILE_SIZE;
             game->coolers[i].base.pixel_pos.y = game->coolers[i].base.maze_pos.y * TILE_SIZE;
             game->coolers[i].base.dir = DIR_LEFT;
@@ -267,7 +267,15 @@ void game_update(GameStateData* game) {
             game->inferno_timer--;
         } else {
             game->inferno_active = 0;
-            // TODO: Reset coolers from frightened state
+            // Reset coolers from frightened state
+            {
+                uint8_t j;
+                for (j = 0; j < 4; ++j) {
+                    if (game->coolers[j].mode == GHOST_FRIGHTENED) {
+                        game->coolers[j].mode = GHOST_SCATTER;
+                    }
+                }
+            }
         }
     }
 }

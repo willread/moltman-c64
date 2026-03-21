@@ -10,12 +10,14 @@
 #include "game.h"
 #include "maze.h"
 
+unsigned char read_joystick(void);
+
 // Global game state
 static GameStateData game;
 
-// Screen positioning for simplified maze
-#define MAZE_DISPLAY_X  13  // Center: (40 - 14) / 2 = 13
-#define MAZE_DISPLAY_Y  5   // Leave room for score at top
+// Screen positioning for 20x20 maze
+#define MAZE_DISPLAY_X  10  // Center: (40 - 20) / 2 = 10
+#define MAZE_DISPLAY_Y  2   // Leave room for score at top
 
 // ==================== INITIALIZATION ====================
 
@@ -101,9 +103,14 @@ void draw_molty(const Character* molty) {
     unsigned char screen_x = MAZE_DISPLAY_X + molty->maze_pos.x;
     unsigned char screen_y = MAZE_DISPLAY_Y + molty->maze_pos.y;
     
-    // Mr. Molty character (square with fire colors)
-    textcolor(MOLTY_COLOR);
-    cputcxy(screen_x, screen_y, '@');  // '@' for Mr. Molty
+    // Mr. Molty character with animation and joystick feedback
+    unsigned char joy = read_joystick();
+    unsigned char ch = ((game.frame_counter >> 3) & 1) ? 'A' : '@';
+    unsigned char col = MOLTY_COLOR;
+    if ((joy & 0x0F) != 0x0F) col = COLOR_YELLOW; // any direction pressed
+    
+    textcolor(col);
+    cputcxy(screen_x, screen_y, ch);
     
     textcolor(COLOR_WHITE);
 }
@@ -115,12 +122,22 @@ void draw_cooler(const Cooler* cooler) {
     
     // Choose color based on mode
     unsigned char col;
-    // Note: game.inferno_active not available here, would need game state
-    // For demo, just use base color
-    col = cooler->base.color;
+    unsigned char ch;
+    
+    if (cooler->mode == GHOST_FRIGHTENED) {
+        col = COOLER_FRIGHTENED_COLOR;
+        ch = 'F';  // Frightened ghost
+    } else if (cooler->mode == GHOST_EYES) {
+        col = COOLER_EYES_COLOR;
+        ch = 'E';  // Eyes only
+    } else {
+        col = cooler->base.color;
+        // Animate between G and H
+        ch = ((game.frame_counter + cooler->base.sprite_index) >> 3) & 1 ? 'H' : 'G';
+    }
     
     textcolor(col);
-    cputcxy(screen_x, screen_y, 'G');  // 'G' for ghost
+    cputcxy(screen_x, screen_y, ch);
     
     textcolor(COLOR_WHITE);
 }
@@ -177,8 +194,19 @@ void draw_game_screen(void) {
 // ==================== INPUT HANDLING ====================
 
 unsigned char read_joystick(void) {
-    // CIA1 joystick port 2 (ACTIVE LOW: 0 = pressed)
-    return PEEK(0xDC00);
+    // Try both joystick ports (ACTIVE LOW: 0 = pressed)
+    // Port 1: 0xDC01, Port 2: 0xDC00
+    // Many C64 games use port 1 as primary
+    unsigned char joy1 = PEEK(0xDC01);
+    unsigned char joy2 = PEEK(0xDC00);
+    
+    // If port 1 shows any direction pressed, use it
+    // Otherwise use port 2
+    if ((joy1 & 0x1F) != 0x1F) {  // Any direction/fire pressed on port 1
+        return joy1;
+    } else {
+        return joy2;
+    }
 }
 
 void handle_title_input(void) {
