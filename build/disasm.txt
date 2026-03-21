@@ -1,5 +1,5 @@
 ; da65 V2.19 - Git 4232e7a
-; Created:    2026-03-21 19:18:29
+; Created:    2026-03-21 19:20:05
 ; Input file: build/game.prg
 ; Page:       1
 
@@ -2459,7 +2459,7 @@ LF1D5:  ldx     #$00
         jsr     L1FA5
         tax
         beq     LF20D
-        lda     #$40
+        lda     #$61
         ldy     #$01
         sta     ($02),y
         lda     #$06
@@ -2478,7 +2478,7 @@ LF20D:  ldy     #$05
         lda     ($02),y
         cmp     #$01
         bne     LF231
-        lda     #$51
+        lda     #$2E
         ldy     #$02
         sta     ($02),y
         lda     #$01
@@ -2487,7 +2487,7 @@ LF20D:  ldy     #$05
 LF231:  lda     ($02),y
         cmp     #$02
         bne     LF241
-        lda     #$57
+        lda     #$CF
         ldy     #$02
         sta     ($02),y
         tya
@@ -2551,7 +2551,7 @@ LF241:  lda     #$20
         ldy     #$01
         lda     ($02),y
         jsr     L2365
-        lda     #$CF
+        lda     #$40
         jsr     L211F
         lda     #$01
         jsr     L2103
@@ -2695,7 +2695,7 @@ LF241:  lda     #$20
         jsr     L2365
         lda     #$00
         jsr     L2365
-        lda     #$CF
+        lda     #$40
         jsr     L211F
         lda     #$01
         jsr     L2103

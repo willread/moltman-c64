@@ -70,15 +70,15 @@ void draw_maze(const GameStateData* game) {
             unsigned char col;
             
             if (maze_is_wall(x, y)) {
-                ch = 0x40;  // Checkerboard for walls
+                ch = 0x61;  // Solid block for walls
                 col = WALL_COLOR;
             } else {
                 unsigned char dot_type = maze_get_dot(x, y);
                 if (dot_type == 1) {
-                    ch = 0x51;  // Small dot
+                    ch = '.';  // Small dot
                     col = DOT_COLOR;
                 } else if (dot_type == 2) {
-                    ch = 0x57;  // Large dot (power pellet)
+                    ch = 'O';  // Large dot (power pellet)
                     col = POWER_COLOR;
                 } else {
                     ch = ' ';   // Empty space
@@ -103,7 +103,7 @@ void draw_molty(const Character* molty) {
     
     // Mr. Molty character (square with fire colors)
     textcolor(MOLTY_COLOR);
-    cputcxy(screen_x, screen_y, 'O');  // 'O' for now, could be custom char later
+    cputcxy(screen_x, screen_y, '@');  // '@' for Mr. Molty
     
     textcolor(COLOR_WHITE);
 }
@@ -150,7 +150,7 @@ void draw_lives(const GameStateData* game) {
     
     for (i = 0; i < game->lives; ++i) {
         textcolor(MOLTY_COLOR);
-        cputcxy(26 + i, 0, 'O');
+        cputcxy(26 + i, 0, '@');
         textcolor(COLOR_WHITE);
     }
 }

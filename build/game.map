@@ -1,14 +1,14 @@
 Modules list:
 -------------
-game.c.1512981.0.o:
+game.c.1513054.0.o:
     CODE              Offs=000000  Size=001108  Align=00001  Fill=0000
     RODATA            Offs=000000  Size=000006  Align=00001  Fill=0000
-main.c.1512981.1.o:
+main.c.1513054.1.o:
     CODE              Offs=001108  Size=000515  Align=00001  Fill=0000
     RODATA            Offs=000006  Size=0000D1  Align=00001  Fill=0000
     BSS               Offs=000000  Size=0003C5  Align=00001  Fill=0000
     DATA              Offs=000000  Size=000001  Align=00001  Fill=0000
-maze.c.1512981.2.o:
+maze.c.1513054.2.o:
     CODE              Offs=00161D  Size=000239  Align=00001  Fill=0000
     RODATA            Offs=0000D7  Size=0001A4  Align=00001  Fill=0000
 /tmp/cc65/share/cc65/lib/c64.lib(add.o):
@@ -298,59 +298,59 @@ __ONCE_RUN__ ([linker generated]):
 __STACKSIZE__ ([linker generated]):
     [linker generated]        /tmp/cc65/share/cc65/cfg/c64.cfg:15
 __STARTUP__ (crt0.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:13
+    main.c.1513054.1.o        main.c.1513054.1.s:13
 ___bzero (memset.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 _bgcolor (color.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:18
+    main.c.1513054.1.o        main.c.1513054.1.s:18
 _bordercolor (bordercolor.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:19
+    main.c.1513054.1.o        main.c.1513054.1.s:19
 _clrscr (clrscr.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:14
+    main.c.1513054.1.o        main.c.1513054.1.s:14
 _cputc (cputc.o):
     cputs.o                   conio/cputs.s:9
 _cputcxy (cputc.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:15
+    main.c.1513054.1.o        main.c.1513054.1.s:15
 _cputsxy (cputs.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:16
-_game_init (game.c.1512981.0.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:20
-_game_reset_level (game.c.1512981.0.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:21
-_game_update (game.c.1512981.0.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:22
-_main (main.c.1512981.1.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:16
+_game_init (game.c.1513054.0.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:20
+_game_reset_level (game.c.1513054.0.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:21
+_game_update (game.c.1513054.0.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:22
+_main (main.c.1513054.1.o):
     callmain.o                runtime/callmain.s:11
-_maze_get_dot (maze.c.1512981.2.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:29
-    game.c.1512981.0.o        game.c.1512981.0.s:31
-_maze_init (maze.c.1512981.2.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:29
-_maze_is_wall (maze.c.1512981.2.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:28
-    game.c.1512981.0.o        game.c.1512981.0.s:30
-_maze_remove_dot (maze.c.1512981.2.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:32
+_maze_get_dot (maze.c.1513054.2.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:29
+    game.c.1513054.0.o        game.c.1513054.0.s:31
+_maze_init (maze.c.1513054.2.o):
+    game.c.1513054.0.o        game.c.1513054.0.s:29
+_maze_is_wall (maze.c.1513054.2.o):
+    main.c.1513054.1.o        main.c.1513054.1.s:28
+    game.c.1513054.0.o        game.c.1513054.0.s:30
+_maze_remove_dot (maze.c.1513054.2.o):
+    game.c.1513054.0.o        game.c.1513054.0.s:32
 _rand (rand.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:13
+    game.c.1513054.0.o        game.c.1513054.0.s:13
 _textcolor (color.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:17
+    main.c.1513054.1.o        main.c.1513054.1.s:17
 addysp (addysp.o):
     incsp7.o                  runtime/incsp7.s:8
     incsp6.o                  runtime/incsp6.s:8
     incsp5.o                  runtime/incsp5.s:8
     incsp4.o                  runtime/incsp4.s:8
     incsp3.o                  runtime/incsp3.s:8
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 addysp1 (addysp.o):
     sub.o                     runtime/sub.s:8
 aslax3 (aslax3.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 bnega (bneg.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 c_sp (zeropage.o):
     subeqsp.o                 runtime/subeqsp.s:8
     sub.o                     runtime/sub.s:9
@@ -376,144 +376,144 @@ c_sp (zeropage.o):
     crt0.o                    /tmp/cc65-src/asminc/zeropage.inc:11
     addysp.o                  runtime/addysp.s:8
     add.o                     runtime/add.s:12
-    maze.c.1512981.2.o        maze.c.1512981.2.s:10
-    main.c.1512981.1.o        main.c.1512981.1.s:10
-    game.c.1512981.0.o        game.c.1512981.0.s:10
+    maze.c.1513054.2.o        maze.c.1513054.2.s:10
+    main.c.1513054.1.o        main.c.1513054.1.s:10
+    game.c.1513054.0.o        game.c.1513054.0.s:10
 callmain (callmain.o):
     crt0.o                    c64/crt0.s:9
 decsp1 (decsp1.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 decsp2 (decsp2.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 decsp4 (decsp4.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 decsp7 (decsp7.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 donelib (condes.o):
     crt0.o                    c64/crt0.s:8
 gotoxy (gotoxy.o):
     cputs.o                   conio/cputs.s:9
     cputc.o                   c64/cputc.s:12
 incax1 (incax1.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incax2 (incax2.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incax7 (incax7.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incaxy (incaxy.o):
     incax7.o                  runtime/incax7.s:8
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 incsp1 (incsp1.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp2 (incsp2.o):
     staxspi.o                 runtime/staxspi.s:9
     staspidx.o                runtime/staspidx.s:8
     popptr1.o                 runtime/popptr1.s:8
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp3 (incsp3.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp4 (incsp4.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp5 (incsp5.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp6 (incsp6.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 incsp7 (incsp7.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 initlib (condes.o):
     crt0.o                    c64/crt0.s:8
 ldaidx (ldai.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 ldax0sp (ldaxsp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 ldaxidx (ldaxi.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 ldaxysp (ldaxsp.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 ldptr10sp (ldptr1sp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 ldptr1ysp (ldptr1sp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 leaa0sp (leaaxsp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 leaaxsp (leaaxsp.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 plot (cputc.o):
     gotoxy.o                  cbm/gotoxy.s:8
 popa (popa.o):
@@ -537,12 +537,12 @@ ptr1 (zeropage.o):
     ldaxi.o                   runtime/ldaxi.s:8
     ldai.o                    runtime/ldai.s:8
     cputs.o                   conio/cputs.s:10
-    maze.c.1512981.2.o        maze.c.1512981.2.s:11
-    main.c.1512981.1.o        main.c.1512981.1.s:11
-    game.c.1512981.0.o        game.c.1512981.0.s:11
+    maze.c.1513054.2.o        maze.c.1513054.2.s:11
+    main.c.1513054.1.o        main.c.1513054.1.s:11
+    game.c.1513054.0.o        game.c.1513054.0.s:11
 ptr2 (zeropage.o):
     memset.o                  common/memset.s:20
-    game.c.1512981.0.o        game.c.1512981.0.s:11
+    game.c.1513054.0.o        game.c.1513054.0.s:11
 ptr3 (zeropage.o):
     memset.o                  common/memset.s:20
 ptr4 (zeropage.o):
@@ -550,111 +550,111 @@ ptr4 (zeropage.o):
     udiv.o                    runtime/udiv.s:10
     mul8.o                    runtime/mul8.s:10
 pusha (pusha.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 pusha0 (pushax.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 pushax (pushax.o):
     callmain.o                runtime/callmain.s:11
     pushw.o                   runtime/pushw.s:8
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 pushw0sp (pushwsp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 pushwidx (pushw.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 pushwysp (pushwsp.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 shlax1 (aslax1.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 sreg (zeropage.o):
     umod.o                    runtime/umod.s:9
     udiv.o                    runtime/udiv.s:10
     icmp.o                    runtime/icmp.s:9
-    main.c.1512981.1.o        main.c.1512981.1.s:10
-    game.c.1512981.0.o        game.c.1512981.0.s:10
+    main.c.1513054.1.o        main.c.1513054.1.s:10
+    game.c.1513054.0.o        game.c.1513054.0.s:10
 staspidx (staspidx.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 staxspidx (staxspi.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 staxysp (staxsp.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 subeqysp (subeqsp.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 tmp1 (zeropage.o):
     staxspi.o                 runtime/staxspi.s:10
     staspidx.o                runtime/staspidx.s:9
@@ -663,36 +663,36 @@ tmp1 (zeropage.o):
     aslax1.o                  runtime/aslax1.s:8
     add.o                     runtime/add.s:12
 tosaddax (add.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 tosicmp (icmp.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 tosmula0 (mul8.o):
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    maze.c.1512981.2.o        maze.c.1512981.2.s:794
-    main.c.1512981.1.o        main.c.1512981.1.s:849
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    maze.c.1513054.2.o        maze.c.1513054.2.s:794
+    main.c.1513054.1.o        main.c.1513054.1.s:849
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 tossuba0 (sub.o):
-    game.c.1512981.0.o        game.c.1512981.0.s:2363
+    game.c.1513054.0.o        game.c.1513054.0.s:2363
 tosudiva0 (udiv.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 tosudivax (udiv.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 tosumoda0 (umod.o):
-    main.c.1512981.1.o        main.c.1512981.1.s:849
+    main.c.1513054.1.o        main.c.1513054.1.s:849
 udiv16 (udiv.o):
     umod.o                    runtime/umod.s:8
 zerobss (zerobss.o):
