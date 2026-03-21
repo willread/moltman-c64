@@ -1,9 +1,0 @@
-*.o
-*.s
-!moltball_asm.s
-*.dbg
-*.map
-*.elf
-labels.txt
-map.txt
-moltball_llvm.*
