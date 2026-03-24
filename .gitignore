@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+*.o
+*.prg
+*.map
+*.txt
+*.dbg
+*.lst
+
+# Editor files
+*.swp
+*~
+.*.swp
+.*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
