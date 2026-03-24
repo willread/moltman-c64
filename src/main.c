@@ -1,5 +1,5 @@
-// main.c - Basic C64 Hello World
-// Compile with: cl65 -O -t c64 -o ../build/hello.prg main.c
+// main.c - C64 Joystick Test
+// Step 2: Visual joystick input feedback
 
 #include <c64.h>
 #include <conio.h>
@@ -8,54 +8,107 @@
 
 int main(void) {
     uint8_t joy;
-    volatile uint16_t i;
+    uint16_t frame;
     
     // Clear screen
     clrscr();
     
-    // Set colors: white text on blue background
+    // Set colors
     textcolor(COLOR_WHITE);
     bgcolor(COLOR_BLUE);
     bordercolor(COLOR_BLACK);
     
-    // Print centered title
-    cputsxy(12, 5, "MOLTMAN C64");
-    cputsxy(10, 7, "============");
+    // Title
+    cputsxy(12, 1, "JOYSTICK TEST");
+    cputsxy(10, 2, "==============");
     
-    // Print hello message
-    cputsxy(8, 10, "HELLO, COMMODORE!");
+    // Instructions
+    cputsxy(4, 4, "PORT 2: MOVE JOYSTICK");
+    cputsxy(4, 5, "FIRE: EXIT PROGRAM");
     
-    // Print status
-    cputsxy(6, 12, "TOOLCHAIN: CC65 2.19");
-    cputsxy(6, 13, "OPTIMIZE: -O");
-    cputsxy(6, 14, "SIZE: TBD BYTES");
+    // Draw joystick diagram
+    cputsxy(10, 8,  "  UP  ");
+    cputsxy(6,  10, "LEFT");
+    cputsxy(16, 10, "RIGHT");
+    cputsxy(10, 12, " DOWN ");
+    cputsxy(6,  14, "FIRE");
     
-    // Print instructions
-    cputsxy(5, 16, "JOYSTICK PORT 2:");
-    cputsxy(8, 17, "MOVE - TEST INPUT");
-    cputsxy(8, 18, "FIRE - EXIT");
+    // Labels for bit values
+    cputsxy(24, 8,  "BIT 0: UP");
+    cputsxy(24, 9,  "BIT 1: DOWN");
+    cputsxy(24, 10, "BIT 2: LEFT");
+    cputsxy(24, 11, "BIT 3: RIGHT");
+    cputsxy(24, 12, "BIT 4: FIRE");
+    cputsxy(24, 14, "ACTIVE LOW");
+    cputsxy(24, 15, "0 = PRESSED");
     
-    // Simple input test loop
+    // Frame counter display
+    cputsxy(4, 18, "FRAME:");
+    cputsxy(4, 19, "JOY VALUE:");
+    
+    frame = 0;
+    
+    // Main loop
     while (1) {
-        // Read joystick port 2 (active low: 0 = pressed)
+        // Read joystick port 2
         joy = PEEK(0xDC00);
         
+        // Update frame counter
+        frame++;
+        
+        // Display frame counter
+        gotoxy(11, 18);
+        cprintf("%05u", frame);
+        
+        // Display raw joy value in hex
+        gotoxy(15, 19);
+        cprintf("$%02X", joy);
+        
+        // Highlight pressed directions on diagram
+        // UP (bit 0)
+        textcolor((joy & 0x01) ? COLOR_GRAY2 : COLOR_YELLOW);
+        cputsxy(10, 8, "  UP  ");
+        
+        // DOWN (bit 1)
+        textcolor((joy & 0x02) ? COLOR_GRAY2 : COLOR_YELLOW);
+        cputsxy(10, 12, " DOWN ");
+        
+        // LEFT (bit 2)
+        textcolor((joy & 0x04) ? COLOR_GRAY2 : COLOR_YELLOW);
+        cputsxy(6, 10, "LEFT");
+        
+        // RIGHT (bit 3)
+        textcolor((joy & 0x08) ? COLOR_GRAY2 : COLOR_YELLOW);
+        cputsxy(16, 10, "RIGHT");
+        
+        // FIRE (bit 4)
+        textcolor((joy & 0x10) ? COLOR_GRAY2 : COLOR_RED);
+        cputsxy(6, 14, "FIRE");
+        
+        // Reset text color
+        textcolor(COLOR_WHITE);
+        
         // Check for fire button to exit
-        if (!(joy & 0x10)) {  // Fire button pressed
+        if (!(joy & 0x10)) {
             break;
         }
         
-        // Optional: simple delay to reduce CPU usage
-        // (not needed for demo, but good practice)
-        for (i = 0; i < 1000; i++);
+        // Small delay to make display readable
+        {
+            volatile uint16_t i;
+            for (i = 0; i < 500; i++);
+        }
     }
     
-    // Clear and show exit message
+    // Exit screen
     clrscr();
-    cputsxy(10, 12, "GOODBYE!");
+    cputsxy(10, 12, "TEST COMPLETE!");
     
-    // Wait a bit before returning
-    for (i = 0; i < 30000; i++);
+    // Wait before exit
+    {
+        volatile uint16_t i;
+        for (i = 0; i < 30000; i++);
+    }
     
     return 0;
 }

@@ -5,14 +5,16 @@ Fresh start for C64 development with incremental, verified steps.
 ## Goal
 Build a polished C64 game (likely Pac-Man clone with Mr. Molty) step by step, ensuring each component works before moving to the next.
 
-## Current Status: Step 1
+## Current Status: Step 2
 ✅ **Toolchain verified**: CC65 2.19  
-✅ **Basic "Hello World"**: Compiles, links, produces PRG  
-⬜ **Test on real hardware/emulator**  
-⬜ **Add input handling**  
-⬜ **Add graphics**  
-⬜ **Add sound**  
-⬜ **Build game mechanics**
+✅ **Step 1: Basic "Hello World"**: 952-byte PRG with exit on fire button  
+✅ **Step 2: Joystick test program**: Visual feedback for all directions, frame counter, hex display  
+⬜ **Step 3: Test on real hardware/emulator**  
+⬜ **Step 4: Add moving character**  
+⬜ **Step 5: Add custom character set**  
+⬜ **Step 6: Add SID sound**  
+⬜ **Step 7: Build maze rendering**  
+⬜ **Step 8: Implement game logic**
 
 ## Project Structure
 ```
